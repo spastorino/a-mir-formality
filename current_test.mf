@@ -1,0 +1,8 @@
+//@check-pass
+[
+    crate Foo {
+        trait Bar<ty T> where [T: Baz<>] {}
+
+        trait Baz<> where [] {}
+    }
+]
